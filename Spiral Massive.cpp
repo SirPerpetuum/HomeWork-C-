@@ -19,26 +19,26 @@ int main()
 
     for (int k = 0; k <= (n / 2); k++)
     {
-        // ïåğâûé
+        // Ã¯Ã¥Ã°Ã¢Ã»Ã©
         for (int j = k; j < (n - k); j++)
         {
             arr[k][j] = counter;
             counter++;
         }
 
-        // âòîğîé
+        // Ã¢Ã²Ã®Ã°Ã®Ã©
         for (int i = k + 1; i < (n - k); i++)
         {
             arr[i][n - k - 1] = counter;
             counter++;
         }
-        // òğåòèé
+        // Ã²Ã°Ã¥Ã²Ã¨Ã©
         for (int j = n - 2 - k; j >= k; j--)
         {
             arr[n - k - 1][j] = counter;
             counter++;
         }
-        // ÷åòâåğòûé
+        // Ã·Ã¥Ã²Ã¢Ã¥Ã°Ã²Ã»Ã©
         for (int i = n - 2 - k; i >= k + 1; i--)
         {
             arr[i][k] = counter;
