@@ -18,7 +18,7 @@ void write_vector(const vector<vector<T>> &V)
 void main()
 {
     int input;
-    vector<int> V; //вводим данные в вектор
+    vector<int> V; //ГўГўГ®Г¤ГЁГ¬ Г¤Г Г­Г­Г»ГҐ Гў ГўГҐГЄГІГ®Г°
     vector<int>::iterator vec1;
     vector<int> vec2;
     vector<vector<int>> vec;
@@ -27,17 +27,17 @@ void main()
     while (cin >> input)
         V.push_back(input);
 
-    sort(V.begin(), V.end());  //сортировка данных
+    sort(V.begin(), V.end());  //Г±Г®Г°ГІГЁГ°Г®ГўГЄГ  Г¤Г Г­Г­Г»Гµ
 
-    vec.push_back(V);  // заполнили 0 индекс вектора
+    vec.push_back(V);  // Г§Г ГЇГ®Г«Г­ГЁГ«ГЁ 0 ГЁГ­Г¤ГҐГЄГ± ГўГҐГЄГІГ®Г°Г 
 
     vec1 = unique(vec[0].begin(), vec[0].end()); 
-    vec[0].erase(vec1, vec[0].end()); //вектор уникальных чисел
+    vec[0].erase(vec1, vec[0].end()); //ГўГҐГЄГІГ®Г° ГіГ­ГЁГЄГ Г«ГјГ­Г»Гµ Г·ГЁГ±ГҐГ«
 
     for (vector<int>::iterator vec_it = V.begin(), next; vec_it != V.end(); vec_it = next)
     {
         next = upper_bound(vec_it, V.end(), *vec_it);
-        vec2.push_back(distance(vec_it, next));  // вектор количества 
+        vec2.push_back(distance(vec_it, next));  // ГўГҐГЄГІГ®Г° ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ  
     }
 
     vec.push_back(vec2);
