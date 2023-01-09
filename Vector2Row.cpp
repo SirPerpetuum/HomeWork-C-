@@ -17,6 +17,7 @@ void write_vector(const vector<vector<T>> &V)
 
 void main()
 {
+    
     int input;
     vector<int> V; //ââîäèì äàííûå â âåêòîð
     vector<int>::iterator vec1;
